@@ -1,0 +1,11 @@
+{
+  "name": "privacypolicyformunajat",
+  "version": "1.0.0",
+  "description": "Privacy policy website for Munajat",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "keywords": ["privacy-policy", "munajat"],
+  "author": "Burooj 4 Tech",
+  "license": "MIT"
+}

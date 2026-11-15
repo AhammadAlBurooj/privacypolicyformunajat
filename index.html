@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Munajat | Burooj 4 Tech</title>
+  <meta name="description" content="Privacy Policy for Munajat mobile application by Burooj 4 Tech. Learn how your data is handled and protected.">
+  <meta name="robots" content="index, follow">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #0f766e;
+      --primary-dark: #115e59;
+      --primary-light: #ccfbf1;
+      --accent: #047857;
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --bg-page: #f8fafc;
+      --bg-card: #ffffff;
+      --border-color: #e2e8f0;
+      --badge-bg: #e6fffa;
+      --badge-text: #0d9488;
+      --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.07), 0 4px 6px -4px rgba(0, 0, 0, 0.05);
+      --radius: 12px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --primary: #14b8a6;
+        --primary-dark: #2dd4bf;
+        --primary-light: #134e4a;
+        --accent: #10b981;
+        --text-main: #f1f5f9;
+        --text-muted: #94a3b8;
+        --bg-page: #0f172a;
+        --bg-card: #1e293b;
+        --border-color: #334155;
+        --badge-bg: #134e4a;
+        --badge-text: #5eead4;
+        --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+        --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background-color: var(--bg-page);
+      color: var(--text-main);
+      line-height: 1.7;
+      padding: 2rem 1rem;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    /* Header Section */
+    .header-card {
+      background: var(--bg-card);
+      border-radius: var(--radius);
+      border: 1px solid var(--border-color);
+      padding: 2.5rem 2rem;
+      margin-bottom: 2rem;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .header-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, #0f766e, #10b981, #14b8a6);
+    }
+
+    .brand-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .app-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background-color: var(--badge-bg);
+      color: var(--badge-text);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0.35rem 0.85rem;
+      border-radius: 9999px;
+      letter-spacing: 0.02em;
+    }
+
+    .app-badge svg {
+      width: 14px;
+      height: 14px;
+      fill: currentColor;
+    }
+
+    .last-updated {
+      font-size: 0.875rem;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    h1 {
+      font-size: 2.25rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 0.75rem;
+      letter-spacing: -0.02em;
+    }
+
+    .lead {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+
+    .agreement-notice {
+      background-color: var(--badge-bg);
+      border-left: 4px solid var(--primary);
+      padding: 0.85rem 1.25rem;
+      border-radius: 6px;
+      font-size: 0.925rem;
+      color: var(--text-main);
+    }
+
+    /* Key Highlights / Summary Grid */
+    .highlights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .highlight-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius);
+      padding: 1.25rem;
+      box-shadow: var(--shadow);
+      display: flex;
+      align-items: flex-start;
+      gap: 0.85rem;
+    }
+
+    .highlight-icon {
+      flex-shrink: 0;
+      width: 36px;
+      height: 36px;
+      background-color: var(--badge-bg);
+      color: var(--primary);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .highlight-icon svg {
+      width: 20px;
+      height: 20px;
+      stroke: currentColor;
+    }
+
+    .highlight-content h4 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+
+    .highlight-content p {
+      font-size: 0.825rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* Main Content Sections */
+    .content-card {
+      background: var(--bg-card);
+      border-radius: var(--radius);
+      border: 1px solid var(--border-color);
+      padding: 2.25rem 2rem;
+      box-shadow: var(--shadow);
+    }
+
+    .section {
+      margin-bottom: 2.25rem;
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--border-color);
+    }
+
+    .section:last-child {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+
+    h2 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      letter-spacing: -0.01em;
+    }
+
+    .sec-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px;
+      height: 28px;
+      background-color: var(--primary);
+      color: #ffffff;
+      font-size: 0.85rem;
+      font-weight: 700;
+      border-radius: 6px;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: var(--text-main);
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+
+    .sub-item {
+      margin-top: 1rem;
+      padding-left: 1rem;
+      border-left: 3px solid var(--border-color);
+    }
+
+    .sub-item strong {
+      color: var(--text-main);
+      display: block;
+      margin-bottom: 0.25rem;
+      font-size: 1rem;
+    }
+
+    .contact-box {
+      background-color: var(--bg-page);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1.25rem;
+      margin-top: 1rem;
+    }
+
+    .contact-box ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .contact-box li {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.95rem;
+    }
+
+    .contact-box a {
+      color: var(--primary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact-box a:hover {
+      text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      margin-top: 2.5rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    footer p {
+      color: var(--text-muted);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 640px) {
+      body {
+        padding: 1rem 0.75rem;
+      }
+      .header-card, .content-card {
+        padding: 1.5rem 1.25rem;
+      }
+      h1 {
+        font-size: 1.75rem;
+      }
+      h2 {
+        font-size: 1.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header-card">
+      <div class="brand-row">
+        <span class="app-badge">
+          <svg viewBox="0 0 24 24"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z"/></svg>
+          Munajat Mobile App
+        </span>
+        <span class="last-updated">Last Updated: November 15, 2026</span>
+      </div>
+      <h1>Privacy Policy</h1>
+      <p class="lead">
+        <strong>Burooj 4 Tech</strong> ("we," "our," or "us") built the <strong>Munajat</strong> mobile application (the "App") as a digital Islamic Adhkar and supplication companion. This Privacy Policy explains how information is handled when you use our App.
+      </p>
+      <div class="agreement-notice">
+        By downloading and using <strong>Munajat</strong>, you agree to the terms outlined in this Privacy Policy.
+      </div>
+    </header>
+
+    <!-- Quick Highlights -->
+    <div class="highlights-grid">
+      <div class="highlight-item">
+        <div class="highlight-icon">
+          <svg fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
+        </div>
+        <div class="highlight-content">
+          <h4>No Account Required</h4>
+          <p>Use all features without sign-up, registration, or login credentials.</p>
+        </div>
+      </div>
+      <div class="highlight-item">
+        <div class="highlight-icon">
+          <svg fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" /></svg>
+        </div>
+        <div class="highlight-content">
+          <h4>Stored On-Device</h4>
+          <p>Preferences, bookmarks, and reading progress stay safely on your phone.</p>
+        </div>
+      </div>
+      <div class="highlight-item">
+        <div class="highlight-icon">
+          <svg fill="none" viewBox="0 0 24 24" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+        </div>
+        <div class="highlight-content">
+          <h4>No Data Selling</h4>
+          <p>We do not collect, monetize, sell, or rent your personal information.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content Policy -->
+    <main class="content-card">
+      <!-- Section 1 -->
+      <section class="section">
+        <h2><span class="sec-number">1</span> Information We Collect and How It Is Used</h2>
+        <p>We respect your privacy and designed <strong>Munajat</strong> to work without user registration or personal accounts.</p>
+
+        <div class="sub-item">
+          <strong>Personal Information</strong>
+          <p>We do not collect, store, or transmit personally identifiable information (PII) such as your name, email address, phone number, or contacts.</p>
+        </div>
+
+        <div class="sub-item">
+          <strong>Local Preferences & App State</strong>
+          <p>Your custom app settings—such as font zoom levels, reading progress, bookmark selections, audio playback states, and language preferences—are stored locally on your device only. We do not have access to this data.</p>
+        </div>
+
+        <div class="sub-item">
+          <strong>Share Feature & Temporary Media Cache</strong>
+          <p>When you tap the "Share" button to share an Adhkar card or text with others, the App temporarily generates an image or text snippet on your device solely to pass it to your chosen sharing app (such as WhatsApp or Instagram). No files are uploaded to our servers.</p>
+        </div>
+
+        <div class="sub-item">
+          <strong>Audio Playback</strong>
+          <p>Audio recitations bundled with or streamed through the App are used strictly for playback functionality and do not record or monitor your microphone.</p>
+        </div>
+
+        <div class="sub-item">
+          <strong>Location Data (Optional)</strong>
+          <p>If you enable features requiring location, the App accesses your approximate or precise location (COARSE_LOCATION / FINE_LOCATION) strictly on your device to calculate accurate timings or directions. Location data is never stored or shared externally.</p>
+        </div>
+      </section>
+
+      <!-- Section 2 -->
+      <section class="section">
+        <h2><span class="sec-number">2</span> Third-Party Services & SDKs</h2>
+        <p>The App may use standard Android platform services provided by Google to ensure smooth delivery and stability:</p>
+
+        <div class="sub-item">
+          <strong>Google Play Services</strong>
+          <p>Used for distributing app updates and collecting anonymized crash logs/diagnostics (such as device model and Android OS version) to help us identify and fix technical bugs.</p>
+        </div>
+
+        <div class="sub-item">
+          <strong>No Advertising or Data Selling</strong>
+          <p>Munajat does not sell, rent, or trade user data to third parties.</p>
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="section">
+        <h2><span class="sec-number">3</span> Data Safety, Retention, and Deletion</h2>
+        <div class="sub-item">
+          <strong>No Cloud Storage</strong>
+          <p>Because we do not collect personal user data on external servers, there is no remote database storing your personal activity.</p>
+        </div>
+
+        <div class="sub-item">
+          <strong>User Control & Deletion</strong>
+          <p>All locally saved preferences remain on your phone until you delete them. You can permanently erase all App data at any time by going to your Android device's <em>Settings &rarr; Apps &rarr; Munajat &rarr; Storage &rarr; Clear Data</em>, or by uninstalling the App.</p>
+        </div>
+      </section>
+
+      <!-- Section 4 -->
+      <section class="section">
+        <h2><span class="sec-number">4</span> Children’s Privacy</h2>
+        <p>Munajat is suitable for general audiences and does not knowingly collect personal information from children under the age of 13.</p>
+      </section>
+
+      <!-- Section 5 -->
+      <section class="section">
+        <h2><span class="sec-number">5</span> Changes to This Privacy Policy</h2>
+        <p>We may update this Privacy Policy periodically as we add new features to Munajat or to comply with Google Play policy updates. Any changes will be reflected on this page with an updated "Last Updated" date.</p>
+      </section>
+
+      <!-- Section 6 -->
+      <section class="section">
+        <h2><span class="sec-number">6</span> Contact Us</h2>
+        <p>If you have any questions, feedback, or privacy concerns regarding Munajat, please contact the developer:</p>
+
+        <div class="contact-box">
+          <ul>
+            <li><strong>Developer:</strong> Burooj 4 Tech</li>
+            <li><strong>Email:</strong> <a href="mailto:buroojofficial@gmail.com">buroojofficial@gmail.com</a></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 Burooj 4 Tech. All rights reserved.</p>
+      <p>Munajat &mdash; Digital Islamic Adhkar & Supplication Companion</p>
+    </footer>
+  </div>
+</body>
+</html>
+
